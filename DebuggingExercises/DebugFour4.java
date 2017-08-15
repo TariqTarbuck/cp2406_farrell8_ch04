@@ -3,22 +3,22 @@ public class DebugFour4
 {
    public static void main(String args[])
    {
-      final double DISCOUNT_RATE = 0.90;
+      final double discountRate = 0.90;
       int price = 100;
-      double price2 = 100.00;
-      tenPercentOff(price, DISCOUNT_RATE);
-      tenPercentOff(price2, DISCOUNT_RATE);
+      double priceTwo = 100.00;
+      tenPercentOff(price, discountRate);
+      tenPercentOff(priceTwo, discountRate);
    }
-   public static void tenPercentOff(int p)
+   public static void tenPercentOff(int price, final double discountRate)
    {
-      double newPrice = p * DISCOUNT_RATE;
-      System.out.println("Ten percent off  + p);
+      double newPrice = (price * discountRate);
+      System.out.println("Ten percent off"  + price);
       System.out.println("  New price is " + newPrice);
    }
-   public static void tenPercentOff(double p)
+   public static void tenPercentOff(double price,final double discountRate)
    {
-      double newPrice = DISCOUNT_RATE;
-      System.out.println("Ten percent off " + p);
+      double newPrice = discountRate;
+      System.out.println("Ten percent off " + price);
       System.out.println("  New price is " + newPrice);
    }
 }
