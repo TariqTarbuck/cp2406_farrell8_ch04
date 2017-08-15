@@ -1,5 +1,5 @@
 // Some circle statistics
-public class FixDebugFor2
+public class DebugFour2
 {
    public static void main(String args[])
    {
